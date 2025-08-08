@@ -1,0 +1,417 @@
+\documentclass[11pt]{exam}
+\usepackage[a4paper,width=170mm,top=20mm,bottom=25mm]{geometry}
+%\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%\usepackage{cleveref}
+%\usepackage{tabularx,pbox}
+%\usepackage[nopar]{lipsum}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[inline]{enumitem}
+\usepackage{float}
+%\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{pdfrender}
+\usepackage{pgfplots}  
+\pgfplotsset{width=10cm,compat=1.8} 
+\newcommand*{\boldcheckmark}{%
+	\textpdfrender{
+		TextRenderingMode=FillStroke,
+		LineWidth=.5pt, % half of the line width is outside the normal glyph
+	}{\checkmark}%
+}
+\setlength{\parindent}{0pt}
+	\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand{\thesection}{\large \Roman{section}}
+\pagestyle{headandfoot}
+
+\begin{document}
+
+%==============================================================
+	\begin{minipage}{\linewidth}
+	\begin{minipage}{0.14\linewidth}%
+		\includegraphics[width=0.85\textwidth]{iare.png}\end{minipage}
+	\begin{minipage}[r]{0.86\textwidth}%
+		\noindent
+		\begin{center}	
+			\renewcommand{\arraystretch}{1.0}
+			\textcolor{blue}{\Large \bfseries INSTITUTE OF AERONAUTICAL ENGINEERING}\\
+			%\hspace*{5.2cm} 
+			\textcolor{blue}{\Large (Autonomous)} \\
+			%\hspace*{4.7cm}
+			\small Dundigal, Hyderabad - 500 043 \\  [3pt] 
+			\large \bfseries AERONAUTICAL ENGINEERING \\\vspace{2pt}
+	\textcolor{red}{\large \bfseries COURSE DESCRIPTION} \\\vspace{3pt}
+\end{center}
+\end{minipage}\end{minipage}
+\par
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.2}
+%\vspace{0.5cm}
+\begin{flushleft}
+	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.5cm}  | >{\centering\arraybackslash}p{2.2cm}  |   >{\centering\arraybackslash}p{2.2cm} | >{\centering\arraybackslash}p{2.2cm}|
+	>{\centering\arraybackslash}p{2.2cm}  | >{\centering\arraybackslash}p{3cm} |}
+	\hline
+		Course Title & \multicolumn{5}{l|} {\textbf{AEROSPACE STRUCTURAL DYNAMICS LABORATORY}} \\ \hline
+		
+	Course Code  & \multicolumn{5}{l|}{AAEC45}  \\ \hline
+	
+	Program & \multicolumn{5}{l|}{B.Tech}  \\ \hline
+	
+	Semester  & \multicolumn{5}{l|}{VII}  \\ \hline
+	
+	Course Type  & \multicolumn{5}{l|}{ Laboratory }  \\ \hline
+	
+	Regulation  & \multicolumn{5}{l|}{ UG-20}     \\ \hline
+	
+	\multirow{3}{*}{Course Structure} & \multicolumn{3}{c|}{Theory}      & \multicolumn{2}{c|}{Practical} \\ \cline{2-6} & \multicolumn{1}{c|}{Lecture} & \multicolumn{1}{c|}{Tutorials} & Credits & Laboratory      & Credits      \\ \cline{2-6} 
+	& \multicolumn{1}{c|}{-}       & -  & -       & 3              & 1.5         \\ \hline
+	Course Coordinator  &  \multicolumn{5}{l|}{Mr G Shiva krishna, Assistant Professor}     \\ \hline
+\end{tabular}
+\end{flushleft}
+\vspace{-0.5cm}
+\begin{flushleft}
+	\textcolor{blue}{\section{\large \bfseries COURSE PRE-REQUISITES:}}
+	\begin{tabular}{|>{\centering\arraybackslash}p{3cm}  | >{\centering\arraybackslash}p{4cm}  |   >{\centering\arraybackslash}p{3cm} |>{\centering\arraybackslash}p{5cm}|} 
+		\hline 		
+		\textbf{Level}&	\textbf{Course Code}&	\textbf{Semester}&	\textbf{Prerequisites}\\ 
+		\hline
+		B.Tech& AMEC24	&II	& Aircraft Stability and Control	\\ 
+		\hline
+\end{tabular}\end{flushleft}
+\textcolor{blue}{\section{\large \bfseries COURSE OVERVIEW:}}
+This course focuses on mechanical devices that are designed to have mobility to perform certain functions. In this
+process they are subjected to some forces. This course will provide the knowledge on how to analyze the motions of
+mechanisms and design mechanisms to give required strength. This includes relative static and dynamic force analysis
+and consideration of gyroscopic effects on aero planes, ships, automobiles like two wheelers and four wheelers.
+Balancing of rotating and reciprocating masses, friction effect in brakes clutches and dynamometers are also studied.
+Mechanical vibrations give an insight into the various disturbances while designing vibratory systems.
+
+\begin{flushleft}\vspace{-0.75cm}
+\textcolor{blue}{\section{\large \bfseries MARKS DISTRIBUTION:}}
+	\begin{tabular}{|>{\centering\arraybackslash}p{5cm}  | >{\centering\arraybackslash}p{3.75cm}  |   >{\centering\arraybackslash}p{3.75cm} |>{\centering\arraybackslash}p{2.8cm}|}
+		\hline 
+	\textbf{Subject}&	\textbf{SEE Examination}&	\textbf{CIE Examination}&	\textbf{Total Marks}\\ 
+	\hline
+AEROSPACE STRUCTURAL DYNAMICS LABORATORY	&	70 Marks&	30 Marks&	100\\ 
+	\hline
+	\end{tabular}
+\end{flushleft}\vspace{-1cm}
+\begin{flushleft}
+\textcolor{blue}{\section{\large \bfseries DELIVERY / INSTRUCTIONAL METHODOLOGIES:}}
+	\begin{tabular}{|>{\centering\arraybackslash}p{0.3cm}  | >{\centering\arraybackslash}p{2.3cm}  |   >{\centering\arraybackslash}p{0.5cm} |>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{0.5cm}  | >{\centering\arraybackslash}p{3cm}  |   >{\centering\arraybackslash}p{0.5cm} |>{\centering\arraybackslash}p{4cm}|}
+	\hline 
+
+\boldcheckmark &  Demo Video  & \boldcheckmark& Lab Worksheets &  \boldcheckmark & Viva Questions  & \boldcheckmark &  Probing further Questions \\ \hline
+\end{tabular}
+\end{flushleft}
+\vspace{-2.5cm}
+\newpage
+\textcolor{blue}{\section{\large \bfseries EVALUATION METHODOLOGY:}}
+Each laboratory will be evaluated for a total of 100 marks consisting of 30 marks forinternal assessment and 70 marks for semester end lab examination. Out of 30 marks ofinternal assessment, continuous lab assessment will be done for 20 marks for the day today performance and 10 marks for the final internal lab assessment. \\
+\textbf{Semester End Examination (SEE):}The semester end labexamination for 70 marks shall be conducted by two examiners, one of them beingInternal Examiner and the other being External Examiner, both nominated by thePrincipal from the panel of experts recommended by Chairman, BOS.
+The emphasis on the experiments is broadly based on the following criteria given in Table: 1
+\begin{longtable}{|C{4cm}|C{5.8cm}|C{5.6cm}|}
+	\hline
+	&Experiment Based	&	Programming based\\ \hline
+20 \%&	Objective&	Purpose\\ \hline
+20 \%&	Analysis&	Algorithm\\ \hline
+20 \%&	Design&	Programme\\ \hline
+20 \%&	Conclusion&	Conclusion\\ \hline
+20 \%&	Viva&	Viva\\ \hline
+\end{longtable}
+\textcolor{blue}{\textbf{\large  Continuous Internal Assessment (CIA):}}\\
+CIA is conducted for a total of 30 marks (Table 1), with 20 marks for continuous lab assessment during day to day performance, 10 marks for final internal lab assessment. 
+\begin{longtable}{|C{2.5cm}|C{4.3cm}|C{4.5cm}|C{3.5cm}|}
+	\hline
+\centering \textbf{Component}&	\multicolumn{2}{c|}{\textbf{Laboratory}}    &	 \multirow{2}{*}{\textbf{Total Marks}} \\ \cline{1-3}
+\textbf{Type of Assessment}&	\textbf{Day to day performance}&	\textbf{Final internal lab assessment}&	\\\hline
+CIA Marks&	20&	10&	30\\\hline
+\end{longtable}
+\textcolor{blue}{\textbf{\large Continuous Internal Examination (CIE):}}\\
+One CIE exams shall be conducted at the end of the 16th week of the semester. The CIE exam is conducted for 10 marks of 3 hours duration.
+\begin{enumerate}
+	\item \textbf{Experiment Based }
+\begin{longtable}{|C{2.2cm}|C{2.2cm}|C{2.2cm}|C{2.42cm}|C{2.42cm}|C{2.2cm}|}
+	\hline
+Objective&	Analysis&	Design&	Conclusion&	Viva&	Total\\\hline
+2&	2&	2&	2&	2&	10\\\hline
+\end{longtable}
+\item \textbf{Programming Based }
+\begin{longtable}{|C{2.2cm}|C{2.2cm}|C{2.2cm}|C{2.42cm}|C{2.42cm}|C{2.2cm}|}
+	\hline
+	Objective&	Analysis&	Design&	Conclusion&	Viva&	Total\\\hline
+	-&	-&	-&	-&	-&	0\\\hline
+\end{longtable}
+\end{enumerate}\vspace{-1cm}
+\newpage
+\textcolor{blue}{\section{\large \bfseries COURSE OBJECTIVES:}}\vspace{-0.4cm}
+
+%	\flushleft\textbf{\textcolor{blue}{\large COURSE OBJECTIVES:}}\\		
+\textbf{The students will try to learn:}\vspace{-0.4cm}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.2}
+\begin{flushleft}	
+	\begin{longtable}{|C{1.5cm}|R{15cm}|}
+		\hline
+		I &The basic principles of kinematics and there lated terminology of machines. \tabularnewline
+		\hline
+		II & The Discriminate mobility; enumerate links and joints in the mechanisms. \tabularnewline
+		\hline
+		III & The concept of analysis and formulation of different mechanisms. \tabularnewline
+		\hline
+	 
+		\hline	
+	\end{longtable}
+\end{flushleft}\vspace{-2cm}
+\textcolor{blue}{\section{\large \bfseries COURSE OUTCOMES:}}\vspace{-0.4cm}
+\textbf{After successful completion of the course, students should be able to:}
+\renewcommand{\arraystretch}{1.1}\vspace{-0.4cm}
+\begin{flushleft}
+	\begin{longtable}{|C{1.2cm}|R{13cm}|C{2cm}|}
+		\hline
+	
+		CO 1&\textbf{Choose} \textcolor{blue}{ the function of governors and gyroscopes in }\textcolor{red}{  aerospace systems. }   	& Understand\tabularnewline\hline
+		CO 2&\textbf{ Perform } \textcolor{blue}{ static and dynamic force analysis of} \textcolor{red}{ mechanisms.
+			the complex surfaces	 }	& Apply\tabularnewline
+		\hline
+			CO 3& \textbf{Calculate } \textcolor{blue}{the balancing forces and reciprocating masses} \textcolor{red}{in mechanical systems.}	&Apply \tabularnewline\hline
+		CO 4& 
+			\textbf { Analyze } \textcolor{blue}{longitudinal and lateral vibrations } \textcolor{red}{ in mechanical systems. }	& Apply\tabularnewline
+		\hline
+			CO 5& 	\textbf{Design and evaluate  } \textcolor{blue}{the critical speed of  } \textcolor{red}{ rotating shafts and mechanisms.}	& Apply \tabularnewline \hline
+			CO 6& 	\textbf{ Investigate} \textcolor{blue}{free and forced vibrations } \textcolor{red}{in beam structures, particularly cantilever beams}	& Apply \tabularnewline 
+		\hline
+	\end{longtable}
+\end{flushleft}\vspace{-1.5cm}
+\textcolor{blue}{\section{\large \bfseries  PROGRAM OUTCOMES: }}\vspace{-0.4cm}
+\begin{flushleft}
+	\begin{longtable}{|>{\centering\arraybackslash}p{1.6cm}  | >{\raggedright\arraybackslash}p{15cm}  | }
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Program Outcomes}}  \\ \hline
+		\endhead
+		\hline
+		PO 1&	\textbf{Engineering knowledge:} Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.\\ \hline
+		PO 2&	\textbf{Problem analysis:} Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.\\ \hline
+		PO 3&	\textbf{Design/Development of Solutions:} Design solutions for complex Engineering problems and design system components or processes that meet the specified needs with  appropriate consideration for the public health and safety,
+		and the cultural, societal, and Environmental considerations\\ \hline
+		PO 4&	\textbf{Conduct Investigations of Complex Problems:} Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.\\ \hline
+		PO 5&	\textbf{Modern Tool Usage: }Create, select, and apply appropriate techniques, resources, and modern Engineering and IT tools including prediction and modelling to complex Engineering activities with an understanding of the limitations\\ \hline
+		
+		PO 6& \textbf{The  engineer  and  society:} Apply reasoning informed by the contextual knowledge to assess 
+		societal,  health,  safety,  legal  and  cultural  issues  and  the  consequent  responsibilities  relevant  to 
+		the professional engineering practice. \\ \hline
+		PO 7&  \textbf{Environment  and  sustainability:}  Understand  the  impact  of  the  professional  engineering 
+		solutions  in  societal  and  environmental  contexts,  and  demonstrate  the  knowledge  of,  and  need 
+		for sustainable development. \\ \hline
+		PO 8& \textbf{Ethics:}  Apply  ethical  principles  and  commit  to  professional  ethics  and  responsibilities  and 
+		norms of the engineering practice. \\ \hline
+		PO 9& \textbf{Individual and team work:} Function effectively as an individual, and as a member or leader 
+		in diverse teams, and in multidisciplinary settings. \\ \hline
+		PO 10&  \textbf{Communication: } Communicate  effectively  on  complex  engineering  activities  with  the 
+		engineering  community  and  with  society  at  large,  such  as,  being  able  to  comprehend  and  write 
+		effective  reports  and  design  documentation,  make  effective  presentations,  and  give  and  receive 
+		clear instructions. \\ \hline
+		PO 11&  \textbf{Project management  and  finance: } Demonstrate  knowledge  and  understanding  of  the 
+		engineering  and  management  principles  and  apply  these  to  one’s  own  work,  as  a  member  and 
+		leader in a team, to manage projects and in multidisciplinary environments. \\ \hline
+		PO 12&	\textbf{Life-Long Learning:} Recognize the need for and having the preparation and ability to engage in independent and life-long learning in the broadest context of technological change\\ \hline
+	\end{longtable}
+\end{flushleft}\
+\vspace{-2.0cm}
+%\vspace{-0.5cm}
+\textcolor{blue}{\section{\large \bfseries HOW PROGRAM OUTCOMES ARE ASSESSED:}}\vspace{-0.4cm}
+\begin{flushleft}
+	\begin{longtable}{|>{\centering\arraybackslash}p{1.6cm}  | >{\raggedright\arraybackslash}p{8.8cm}  |   >{\centering\arraybackslash}p{1.8cm} |>{\centering\arraybackslash}p{2.7cm}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Program}} & \textbf{Strength} & \textbf{Proficiency Assessed by} \\ \hline
+	PO1 &Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.	&2	&CIA,SEE	\\ \hline
+	PO3 & Design solutions for complex Engineering problems and design system components or processes that meet the specified needs with  appropriate consideration for the public health and safety,	&3	&CIA,SEE	\\ \hline
+	PO4 &Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.&3	&CIA,SEE	\\ \hline
+	PO12 &Recognize the need for and having the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.&2	&CIA,SEE	\\ \hline
+	\multicolumn{4}{l}{\textbf{3 = High; 2 = Medium; 1 = Low}}\\ 
+			\end{longtable}
+	\end{flushleft}\vspace{-2.5cm}
+	
+\textcolor{blue}{\section{\large \bfseries HOW PROGRAM SPECIFIC OUTCOMES ARE ASSESSED:}}\vspace{-0.4cm}
+\begin{flushleft}
+	\begin{longtable}{|>{\centering\arraybackslash}p{1.8cm}  | >{\raggedright\arraybackslash}p{9cm}  |   >{\centering\arraybackslash}p{2cm} |>{\centering\arraybackslash}p{2cm}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Program}} & \textbf{Strength} & \textbf{Proficiency Assessed by} \\ \hline
+		PSO 3 &		Make use of multi physics, computational fluid dynamics and flight simulation tools for building career paths towards innovative startups, employability and higher studies. &1	&CIA,SEE	\\ \hline
+		\multicolumn{4}{l}{\textbf{3 = High; 2 = Medium; 1 = Low}}\\ 
+		\end{longtable}
+\end{flushleft}
+
+\vspace{-1.5cm}
+\textcolor{blue}{\section{\large \bfseries	MAPPING COURSE OUTCOMES LEADING TO THE ACHIEVEMENT OF PROGRAM OUTCOMES AND PROGRAM SPECIFIC OUTCOMES}}\vspace{-0.4cm}
+\begin{flushleft}
+	\begin{longtable}{|>{\centering\arraybackslash}p{4cm}  | >{\centering\arraybackslash}p{1.75cm}  |   >{\centering\arraybackslash}p{1.75cm} |>{\centering\arraybackslash}p{1.75cm}| >{\centering\arraybackslash}p{1.75cm}|>{\centering\arraybackslash}p{2.5cm}  | }
+	\hline	
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}\small  COURSE \\\small OUTCOMES\end{tabular}}} & \multicolumn{4}{l|}{PROGRAM OUTCOMES} & PSO'S \\ \cline{2-5} 
+	       &     PO 1    &   PO 3    &   PO 4    & PO12& PSO 3\\ \hline
+CO 1	&   \boldcheckmark    &     &       &  &\\ \hline
+CO 2	&      & \boldcheckmark      & \boldcheckmark      &  &\\ \hline
+CO 3	&   \boldcheckmark  &      & \boldcheckmark      &  &\\ \hline
+CO 4	&      &    \boldcheckmark   &      & \boldcheckmark &\\ \hline
+CO 5	&  \boldcheckmark    &     &      &  &\boldcheckmark\\ \hline
+CO 6	&      & \boldcheckmark     &       &  \boldcheckmark&\\ \hline
+
+	\end{longtable}
+\end{flushleft}\vspace{-1.75cm}
+\textcolor{blue}{\section{\large \bfseries ASSESSMENT METHODOLOGY DIRECT:}}\vspace{-0.24cm}
+
+\begin{flushleft}	
+	\begin{tabular}{|>{\centering\arraybackslash}p{3cm}  | >{\centering\arraybackslash}p{2.2cm}  |   >{\centering\arraybackslash}p{3cm} |>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.6cm}  |>{\centering\arraybackslash}p{1cm}  | } 
+		\hline 		
+	CIE Exams            & \checkmark & SEE Exams       & \checkmark & Seminars               & -     \\ \hline
+	Laboratory Practices &     \checkmark               & Student Viva    &       \checkmark          & Certification          & - \\ \hline
+
+	\end{tabular}
+\end{flushleft}
+%\vspace{-1cm}
+\textcolor{blue}{\section{\large \bfseries	ASSESSMENT METHODOLOGY INDIRECT:}}\vspace{-0.4cm}	
+	\begin{longtable}{|C{1.2cm}|R{6cm}|C{1.3cm}|R{6.5cm}|}
+		\hline
+	\boldcheckmark&	Early Semester Feedback&	\boldcheckmark &	End Semester OBE Feedback\\\hline
+	\textbf{X}&	\multicolumn{3}{l|}{Assessment of Mini Projects by Experts} \\\hline
+\end{longtable}
+\vspace{-1.0cm}
+\textcolor{blue}{\section{\large \bfseries	SYLLABUS:}}	\vspace{-0.4cm}
+  
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{|>{\centering\arraybackslash}p{2.2cm}  | >{\raggedright\arraybackslash}p{13.8cm}  | }
+		\hline 
+		WEEK I & \textcolor{blue}{\textbf{Week-1: GOVERNORS}}\\
+		\hline
+		& To study the function of a Governor.\\
+		\hline
+		WEEK II & \textcolor{blue}{\textbf{ Week-2: GYROSCOPE}}\\
+		\hline
+		& To determine the Gyroscope couple.\\
+		\hline
+		WEEK III & \textcolor{blue}{\textbf{Week-3: STATIC FORCE ANALYSIS}}\\
+		\hline
+		&To draw free body diagram and determine forces under static condition.\\
+		\hline
+		WEEK IV & \textcolor{blue}{\textbf{Week-4: DYNAMIC FORCE ANALYSIS}}\\
+		\hline
+		&To draw free body diagram and determine forces under dynamic condition\\
+		\hline
+		WEEK V & \textcolor{blue}{\textbf{ Week-5: BALANCING}}\\
+		\hline
+		& To determine balancing forces and reciprocating masses.\\
+		\hline
+		WEEK VI & \textcolor{blue}{\textbf{Week-6: BEARINGS}}\\
+		\hline
+		&To determine the bearing life.\\
+		\hline
+		WEEK VII & \textcolor{blue}{\textbf{Week-7: LONGITUDINAL AND LATERAL VIBRATIONS}}\\
+		\hline
+		&To determine the longitudinal and transfer vibration\\
+		\hline
+		WEEK VIII & \textcolor{blue}{\textbf{Week-8: VIBRATION ANALYSIS OF SHAFT}}\\
+		\hline
+		&To determine critical speed of a shaft.\\
+		\hline
+		WEEK IX & \textcolor{blue}{\textbf{Week-09: MECHANISMS}}\\
+		\hline
+		&To design various mechanism and their inversions
+		\\
+		\hline
+		WEEK X & \textcolor{blue}{\textbf{ Week-10: DIFFERENTIAL GEAR BOX}}\\
+		\hline
+		&To study automobile differential gear box\\
+		\hline
+		WEEK XI & \textcolor{blue}{\textbf{Week-11: FREE VIBRATION OF CANTIEVER BEAM}}\\
+		\hline
+		&T.To study Vibrations in beam Structures\\
+		\hline
+		WEEK XII & \textcolor{blue}{\textbf{Week-12: FORCED VIBRATION OF CANTIEVER BEAM}}\\
+		\hline
+		&To study Vibrations in beam Structures\\
+		\hline
+		
+	\end{longtable}
+
+\raggedright	\textcolor{blue}{\textbf{TEXTBOOKS}}\\
+\begin{enumerate}
+		\item  Joseph E. Shigley, “Theory of Machines and Mechanisms”, Oxford University Press, 4th Edition, 2010.
+		\item Thomas Bevan, “Theory of Machines”, Pearson, 3rd Edition, 2009.
+	\end{enumerate}
+  \textcolor{blue}{\textbf{REFERENCE BOOKS:}}\\
+\begin{enumerate}
+	\vspace{-0.5cm}
+	\item http://www.e-booksdirectory.com.
+
+\end{enumerate}
+\vspace{-1cm}
+\textcolor{blue}{\section{\large \bfseries	COURSE PLAN:}}\vspace{-0.4cm}
+The course plan is meant as a guideline. Probably there may be changes.
+
+\begin{flushleft}
+	\begin{longtable}{|>{\centering\arraybackslash}p{1cm}  | >{\raggedright\arraybackslash}p{10.5cm}  |   >{\centering\arraybackslash}p{1.5cm} |>{\centering\arraybackslash}p{1.8cm}|}
+		\hline 
+			\textbf{S.No}&	\centering{\textbf{ Topics to be covered}} &	\textbf{CO's}&\textbf{Reference}\\ 
+		\hline
+1&	 GOVERNORS &	Co1& book1	\\
+\hline
+2& GYROSCOPE	&		Co1& book1	\\
+\hline
+3&STATIC FORCE ANALYSIS	&		Co2& book1	\\
+\hline
+4&DYNAMIC FORCE ANALYSIS	&		Co2& book1	\\
+\hline
+5& BALANCING	&	Co3& book1	\\
+\hline
+6&BEARINGS&		Co3& book1\\
+\hline
+7& LONGITUDINAL AND LATERAL VIBRATIONS&		Co3& book1\\
+\hline
+8&VIBRATION ANALYSIS OF SHAFT&		Co4& book1	\\
+\hline
+9&MECHANISMS&			Co4& book2	\\
+\hline
+10& DIFFERENTIAL GEAR BOX&		Co5& book2	\\
+\hline
+11& FREE VIBRATION OF CANTIEVER BEAM &		Co5& book2	
+\\
+\hline
+12& FORCED VIBRATION OF CANTIEVER BEAM&		Co1& book2	\\
+\hline
+	\end{longtable}
+	\vspace{-2cm}
+\end{flushleft}
+\textcolor{blue}{\section{\large \bfseries	EXPERIMENTS FOR ENHANCED LEARNING (EEL):}}\vspace{-0.4cm}
+	\begin{longtable}{|>{\centering\arraybackslash}p{1cm}  | >{\raggedright\arraybackslash}p{15cm}  |   }
+	\hline
+\textbf{S.No}&\textbf{\centering Design Oriented Experiments} \\
+	\hline
+	1&Design of a Gyroscopic Stabilizer
+	\\
+	\hline
+	2& Analysis of Vibration Isolation in Aircraft Components\\
+	\hline
+	3& Dynamic Force Analysis of Landing Gear Mechanism	\\
+	\hline
+	4& Optimization of Balancing Techniques in Rotating Turbine Blades\\
+	\hline
+	5& Advanced Vibration Analysis of Multi-Mass Systems\\
+	\hline
+\end{longtable}
+\vspace{2cm}
+\flushleft \textbf{Signature of Course Coordinator}\hspace{8cm} \textbf{HOD,AE}\\\textbf{Mr G Shiva krishna.}\\
+
+
+\end{document}
+}
