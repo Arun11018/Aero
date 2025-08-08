@@ -1,0 +1,178 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath}
+%\usepackage{cleveref}
+%\usepackage{tabularx,pbox}
+\usepackage[nopar]{lipsum}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[inline]{enumitem}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{pdfrender}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{colortbl}
+%\newcolumntype{C}{>{\centering\arraybackslash}p{3cm}}% for convenience you can also define a new column type
+
+\renewcommand*{\arraystretch}{1.00}%... and increase the row height
+
+\begin{document}
+	\begin{minipage}{\linewidth}
+		\begin{minipage}{0.14\linewidth}%
+			\includegraphics[width=0.85\textwidth]{iare.png}\end{minipage}
+		%% \thispagestyle{empty}
+		\begin{minipage}[r]{0.86\textwidth}%
+			\noindent
+			\begin{center}	
+				\textcolor{blue}{\Large \bfseries INSTITUTE OF AERONAUTICAL ENGINEERING}\\
+				%\hspace*{5.2cm} 
+				\textcolor{blue}{\Large (Autonomous)} \\
+				%\hspace*{4.7cm}
+				\small Dundigal, Hyderabad - 500 043 \\  [3pt] 
+				\vspace{5pt}
+				\large \bfseries AERONAUTICAL ENGINEERING \\\vspace{5pt}
+				%\framebox[1.1\width]{\small ACADEMIC YEAR 2021-2022} \par \vspace{5pt}
+				\textcolor{red}{\large \bfseries OPEN ENDED EXPERIMENTS} \\\vspace{3pt}
+			\end{center}
+		\end{minipage}
+	\end{minipage}
+	\vspace{0.5cm}
+	\par
+	\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+	\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+	\renewcommand{\arraystretch}{1.2}
+	\vspace{-0.5cm}
+	\begin{flushleft}
+		\begin{longtable}{|R{4cm}|R{2.2cm}|R{2.2cm}|C{2.2cm}|C{2.2cm}|C{2.2cm}|}
+			\hline
+			Course Title                      & \multicolumn{5}{l|}{ \textbf{AEROSPACE STRUCTURAL DYNAMICS}}                                                                  \\ \hline
+			Course Code                       & \multicolumn{5}{l|}{AAEC35}                                                                              \\ \hline
+			Program                           & \multicolumn{5}{l|}{B.Tech}                                                                              \\ \hline
+			Semester                          & VII                         & \multicolumn{4}{l|}{AE}                                                   \\ \hline
+			Course Type                       & Core              & \multicolumn{4}{l|}{}                                                     \\ \hline
+			Regulation                        &      UG-20         & \multicolumn{4}{l|}{.}                                                     \\ \hline
+			\multirow{3}{*}{Course Structure} & \multicolumn{3}{c|}{Theory}                                             & \multicolumn{2}{c|}{Practical} \\ \cline{2-6} 
+			& \multicolumn{1}{c|}{Lecture} & \multicolumn{1}{c|}{Tutorials} & Credits & Laboratory      & Credits      \\ \cline{2-6} 
+			& \multicolumn{1}{c|}{3}       & 1                             & 4     & -               & -            \\ \hline
+			Course Coordinator                 & \multicolumn{5}{l|}{Mr. K Arun Kumar, Assistant Professor}                                          \\ \hline                                      
+		\end{longtable}
+	\end{flushleft}
+	\vspace{-1cm}
+	%\textcolor{blue}{\large \bfseries COURSE OBJECTIVES:}
+	\flushleft\textbf{\textcolor{blue}{\large COURSE OBJECTIVES:}}\\		
+	\textbf{The students will try to learn:}\vspace{-0.5cm}
+	\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+	\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{flushleft}	
+		\begin{longtable}{|C{1.5cm}|R{15cm}|}
+			\hline
+			I & Formulate mathematical models of problems in vibrations using Newton’s second law or energy principles.\tabularnewline
+			\hline
+			II &Determine a complete solution to the modelled mechanical vibration problems.\tabularnewline
+			\hline
+			III &    design a mechanical system that has desirable vibrational behavior.\tabularnewline
+			\hline	
+			IV & Assess the underlying assumptions in the aeroelastic analysis of fixed wing and rotary
+			wing aerospace vehicles/systems.\tabularnewline
+			\hline
+		\end{longtable}
+	\end{flushleft}
+	\vspace{-1cm}
+	\flushleft\textbf{\textcolor{blue}{\large COURSE OUTCOMES:}}\\
+	%\textcolor{blue}{\large \bfseries COURSE }\\
+	\textbf{After successful completion of the course, students should be able to:}
+	\renewcommand{\arraystretch}{1.1}
+	\vspace{-0.5cm}
+	\begin{flushleft}
+		\begin{longtable}{|C{1.2cm}|R{13cm}|C{2cm}|}
+			\hline
+			CO 1 &	\textbf{Outline} \textcolor{blue}{ the fundamental concepts of mechanical vibrations} \textcolor{red}{and justify their application in a variety of engineering design contexts}&Apply\tabularnewline
+			\hline
+			CO 1&	\textbf{Analyze} \textcolor{blue}{  Analytically and numerically predict the dynamic response of a single degree-of-freedom mass-spring-damper system } \textcolor{red}{with no force excitation, with harmonic force excitation, and with general force excitation.}&	Analyze\tabularnewline
+			\hline
+			CO 2&	\textbf{Compute} \textcolor{blue}{  the natural frequency (or
+				frequencies) of vibratory systems  }\textcolor{red}{ for determining the system's modal response.}&	Apply\tabularnewline
+			\hline 
+			
+			CO 3&	\textbf{Apply} \textcolor{blue}{  theoretical and numerical procedures } \textcolor{red}{for predicting the dynamic response of  continuous structural systems under the most diverse loading conditions}.	&Apply\tabularnewline
+			\hline		
+			CO 3&\textbf{Formulate } \textcolor{blue}{ the static aeroelasticity problems such as typical section and wing divergence
+				problems; }\textcolor{red}{ for their selection in real world
+				applications.}	&	Apply\tabularnewline\hline
+		\end{longtable}
+	\end{flushleft}
+	
+\vspace{-1cm}
+\flushleft\textbf{\textcolor{blue}{\large OPEN ENDED EXPERIMENTS / PROBLEMS / PROJECT IDEAS}}\\
+\vspace{-0.5cm}
+	\begin{flushleft}
+		\begin{longtable}{|>{\centering\arraybackslash}p{1.4cm}  |  >{\raggedright\arraybackslash}p{11.3cm} |>{\centering\arraybackslash}p{2cm}|} 
+			\hline
+			\textbf{S.No}&	\centering \textbf{TOPICS}&		\textbf{CO's} \\
+			\hline 
+			1	&	Introduction to theory of vibration	&	CO 1	\\\hline
+2	&	Equation of motion, free vibration	&	CO 1	\\\hline
+3	&	Response to harmonic excitation, 	&	CO 1	\\\hline
+4	&	Response to an impulsive excitation	&	CO 1	\\\hline
+5	&	Response to a step excitation,	&	CO 1	\\\hline
+6	&	 Response to periodic excitation (Fourier series)	&	CO 1	\\\hline
+7	&	Response to a periodic excitation (Fourier transform), 	&		\\\hline
+8	&	Laplace transform (Transfer Function).	&	CO 1	\\\hline
+9	&	Equations of motion, free vibration, 	&	CO 2	\\\hline
+10	&	The Eigenvalue problem, 	&	CO 2	\\\hline
+11	&	response to an external applied load	&	CO 2	\\\hline
+12	&	Damping effect;	&	CO 2	\\\hline
+13	&	Multi degree of freedom systems,	&	CO 2	\\\hline
+14	&	 Modeling of continuous systems as   using Newton’s second law to derive equations of motion	&	CO 2	\\\hline
+15	&	Influence coefficients - stiffness influence coefficients, 	&	CO 2	\\\hline
+16	&	Flexibility influence coefficients,	&	CO 2	\\\hline
+17	&	 Inertia influence coefficients;	&	CO 2	\\\hline
+18	&	Potential and kinetic energy expressions in matrix form, 	&	CO 3	\\\hline
+19	&	generalized coordinates and generalized forces	&	CO 3	\\\hline
+20	&	Lagrange‘s equations to derive equations of motion, 	&	CO 3	\\\hline
+21	&	equations of motion of undamped systems in matrix form	&	CO 3	\\\hline
+22	&	Solution of the Eigenvalue problem, expansion theorem, 	&	CO 3	\\\hline
+23	&	unrestrained systems, free vibration of undamped systems	&	CO 3	\\\hline
+24	&	Forced vibration of undamped systems using modal analysis, 	&	CO 3	\\\hline
+25	&	forced vibration of viscously damped systems	&	CO 3	\\\hline
+26	&	Introduction to nonlinear vibrations, simple examples of nonlinear systems, 	&	CO 4	\\\hline
+27	&	Physical properties of nonlinear systems	&	CO 4	\\\hline
+28	&	Solutions of the equation of motion of a single-degree-of-freedom nonlinear system nonlinear systems	&	CO 4	\\\hline
+29	&	Solutions of the equation of motion of a  multi-degree-of-freedom nonlinear systems	&	CO 4	\\\hline
+30	&	Introduction to random vibrations;  	&	CO 4	\\\hline
+31	&	Classification of random processes,	&	CO 4	\\\hline
+32	&	 Probability distribution and density functions,	&	CO 4	\\\hline
+33	&	description of the mean values in terms of the probability density function	&	CO 4	\\\hline
+34	&	Properties of the autocorrelation function,	&	CO 5	\\\hline
+35	&	Power spectral density function, 	&	CO 5	\\\hline
+36	&	Properties of the power spectral density function, 	&	CO 5	\\\hline
+37	&	White noise and narrow and large bandwidth,	&	CO 5	\\\hline
+38	&	Single-degree-of-freedom response, response to a white noise	&	CO 5	\\\hline
+39	&	Introduction, transverse vibration of a string or cable	&	CO 5	\\\hline
+40	&	longitudinal vibration of a bar or rod	&	CO 5	\\\hline
+41	&	torsional vibration of a bar or rod	&	CO 5	\\\hline
+42	&	Lateral vibration of beams, the Rayleigh-Ritz method.	&	CO 5	\\\hline
+43	&	Collar's aero elastic triangle, static aeroelasticity phenomena	&	CO 5	\\\hline
+44	&	Dynamic aero elasticity phenomena, aero elastic problems at transonic speeds	&	CO 65	\\\hline
+45	&	Aero elastic tailoring, active flutter suppression	&	CO 5	\\\hline
+46	&	Effect of aero elasticity in flight vehicle design	&	CO 5	\\\hline
+
+
+		\end{longtable}
+	
+	\end{flushleft}
+	\begin{flushleft}
+		\textbf{Course Coordinator: \hspace{10cm}\textbf{HOD, AE}\\ 
+			Mr. K Arun Kumar, Assistant Professor} \\
+	\end{flushleft}
+\end{document}
+
+
+	

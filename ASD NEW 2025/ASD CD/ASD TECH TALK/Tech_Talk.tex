@@ -1,0 +1,292 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath}
+%\usepackage{cleveref}
+%\usepackage{tabularx,pbox}
+\usepackage[nopar]{lipsum}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[inline]{enumitem}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{pdfrender}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{colortbl}
+\newcolumntype{C}{>{\centering\arraybackslash}p{2.5cm}}% for convenience you can also define a new column type
+
+\renewcommand*{\arraystretch}{1.2}%... and increase the row height
+
+\begin{document}
+	\begin{minipage}{0.15\linewidth}%
+		\flushleft
+		\includegraphics[width=0.85\textwidth]{iare.png}\end{minipage}
+	%% \thispagestyle{empty}
+	\begin{minipage}[r]{0.84\textwidth}%
+		\noindent
+		\begin{center}	
+			\textcolor{blue}{\Large \bfseries INSTITUTE OF AERONAUTICAL ENGINEERING}\\
+			%\hspace*{5.2cm} 
+			\textcolor{blue}{\Large (Autonomous)} \\
+			%\hspace*{4.7cm}
+			\small Dundigal, Hyderabad - 500 043 \\  [3pt] 
+			\vspace{5pt}
+			\large \bfseries AERONAUTICAL ENGINEERING \\\vspace{5pt}
+			%\framebox[1.1\width]{\small ACADEMIC YEAR 2021-2022} \par \vspace{5pt}
+			\textcolor{red}{\large \bfseries TECH TALK TOPICS} \\\vspace{3pt}
+		\end{center}
+	\end{minipage}
+	\vspace{0.5cm}
+	\par
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.2}
+\vspace{-0.5cm}
+\begin{flushleft}
+	\begin{longtable}{|R{3.5cm}|R{2.2cm}|R{2.2cm}|C{2.2cm}|C{2.2cm}|C{2.2cm}|}
+		\hline
+		Course Title                      & \multicolumn{5}{l|}{ \textbf{AEROSPACE STRUCTURAL DYNAMICS}}                                                                  \\ \hline
+		Course Code                       & \multicolumn{5}{l|}{AAEC35}                                                                              \\ \hline
+		Program                           & \multicolumn{5}{l|}{B.Tech}                                                                              \\ \hline
+		Semester                          & VII                         & \multicolumn{4}{l|}{AE}                                                   \\ \hline
+		Course Type                       & Core                     & \multicolumn{4}{l|}{}                                                     \\ \hline
+		Regulation                        & IARE                   & \multicolumn{4}{l|}{UG-20}                                                     \\ \hline
+		\multirow{3}{*}{Course Structure} & \multicolumn{3}{c|}{Theory}                                             & \multicolumn{2}{c|}{Practical} \\ \cline{2-6} 
+		& \multicolumn{1}{c|}{Lecture} & \multicolumn{1}{c|}{Tutorials} & Credits & Laboratory      & Credits      \\ \cline{2-6} 
+		& \multicolumn{1}{c|}{3}       & 1                             & 4      & -               & -            \\ \hline
+		Course Coordinator                 & \multicolumn{5}{l|}{Mr. K Arun Kumar, Assistant Professor}                                          \\ \hline                                     
+	\end{longtable}
+\end{flushleft}
+\vspace{-1cm}
+%\textcolor{blue}{\large \bfseries COURSE OBJECTIVES:}
+\textcolor{blue}{\large \bfseries COURSE OBJECTIVES:}\\
+%\vspace{-0.3cm}		
+\textbf{The students will try to:}
+\vspace{-0.25cm}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.2}
+\begin{flushleft}	
+	\begin{longtable}{|C{1.5cm}|R{15cm}|}
+		\hline
+		I & Formulate mathematical models of problems in vibrations using Newton’s second law or energy principles.\tabularnewline
+		\hline
+		II &Determine a complete solution to the modelled mechanical vibration problems.\tabularnewline
+		\hline
+		III &    design a mechanical system that has desirable vibrational behavior.\tabularnewline
+		\hline	
+		IV & Assess the underlying assumptions in the aeroelastic analysis of fixed wing and rotary
+		wing aerospace vehicles/systems.\tabularnewline
+		\hline
+	\end{longtable}
+\end{flushleft}
+\textcolor{blue}{\large \bfseries COURSE OUTCOMES:}\\
+%\vspace{-0.3cm}	
+\textbf{After successful completion of the course, students should be able to:}\\
+\renewcommand{\arraystretch}{1.1}\vspace{-0.75cm}
+\begin{flushleft}
+	\begin{longtable}{|C{1.5cm}|R{12.5cm}|C{2cm}|}
+		\hline
+		CO 1 &	\textbf{Outline} \textcolor{blue}{ the fundamental concepts of mechanical vibrations} \textcolor{red}{and justify their application in a variety of engineering design contexts}&Apply\tabularnewline
+		\hline
+		CO 2&	\textbf{Analyze} \textcolor{blue}{   the dynamic response of a single degree-of-freedom mass-spring-damper system } \textcolor{red}{with no force excitation, with harmonic force excitation, and with general force excitation.}&	Analyze\tabularnewline
+		\hline
+		CO 3&	\textbf{Compute} \textcolor{blue}{  the natural frequency (or
+			frequencies) of vibratory systems  }\textcolor{red}{ for determining the system's modal response.}&	Apply\tabularnewline
+		\hline 
+		
+		CO 4&	\textbf{Apply} \textcolor{blue}{  theoretical and numerical procedures } \textcolor{red}{for predicting the dynamic response of  continuous structural systems under the most diverse loading conditions}.	&Apply\tabularnewline
+		\hline		
+		CO 5&\textbf{Formulate } \textcolor{blue}{ the static aeroelasticity problems such as typical section and wing divergence
+			problems; }\textcolor{red}{ for their selection in real world
+			applications.}	&	Apply\tabularnewline
+		
+		
+		\hline
+	\end{longtable}
+\end{flushleft}
+\vspace{-1cm}
+\flushleft\textbf{\textcolor{blue}{\large TECH TALK TOPICS:}}\\
+\vspace{-0.5cm}
+	\begin{flushleft}
+		\begin{longtable}{|>{\centering\arraybackslash}p{1.4cm}  |  >{\raggedright\arraybackslash}p{6cm} |>{\centering\arraybackslash}p{3.75cm}|>{\centering\arraybackslash}p{2cm} |>{\centering\arraybackslash}p{2cm} |} 
+			\hline
+			\textbf{Topic No}&	\centering \textbf{Title of the topic}&		\textbf{Source}&		\textbf{Publisher}&		\textbf{Course Outcomes} \\
+			\hline 
+			
+1&Duhem modeling of friction-induced hysteresis&(Volume:28, Issue:5, October 2008)&IEEE&CO1\\\hline
+2&Vibration Stimulation as a Non-Invasive Approach to Monitor the Severity of Meniscus Tears&IEEE Transactions on Neural Systems and Rehabilitation Engineering (Volume: 29) & IEEE & CO1, CO2 \\\hline
+3&Fault Detection Based on a Bio-Inspired Vibration Sensor System&IEEE Access (Volume:6) &IEEE & CO1, CO2\\\hline
+4&Analysis and Optimization of the Novel Inerter-Based Dynamic Vibration Absorbers&IEEE Access (Volume:6)&IEEE&CO2\\\hline
+5&Active Vibration Suppression of Flexible Spacecraft during Attitude Manoeuvre With Actuator Dynamics&IEEE Access (Volume:6)&IEEE&CO1\\\hline
+6&Sensitive Vibration Detection Using Ground-Penetrating Radar&IEEE Microwave and Wireless Components Letters (Volume:23, Issue:12, Dec. 2013)&IEEE&CO1\\\hline
+7&Design of Eccentric Mass-Type Vibration-Damping Electric Actuator Control System for Non-Fixed-Wing Aircraft&IEEE Access (Volume:8)&IEEE&CO2, CO3\\\hline
+8&A compact piezoelectric stack actuator and its simulation in vibration control&Tsinghua Science and Technology (Volume:14, Issue:S2, Dec. 2009)&IEEE&CO1, CO2\\\hline
+9&Utilizing Nonlinear Active Vibration Control to Quench the Nonlinear Vibrations of Helicopter Blade Flapping System&IEEE Access (Volume:8)&IEEE&CO1, CO2\\\hline
+10&Research on Error Compensation Property of Strapdown Inertial Navigation System Using Dynamic Model of Shearer&IEEE Access (Volume:4)&IEEE&CO1, CO3\\\hline
+11&An Enhanced Hemostatic Ultrasonic Scalpel Based on the Longitudinal-Torsional Vibration Mode&IEEE Access (Volume:9)&IEEE&CO1, CO2\\\hline
+12&Design and Modeling of a Magnetic-Coupling Monostable Piezoelectric Energy Harvester under Vortex-Induced Vibration&IEEE Access (Volume:8)&IEEE&CO1, CO2\\\hline
+13&Adaptive Hyperbolic Tangent Sliding-Mode Control for Building Structural Vibration Systems for Uncertain Earthquakes&IEEE Access (Volume:6)&IEEE&CO1, CO2\\\hline
+14&Boundary Control for a Suspension Cable System of a Helicopter With Saturation Nonlinearity Using Backstepping Approach&IEEE Access (Volume:7)&IEEE&CO2\\\hline
+15&Coupled Dynamic Modeling and Analysis of the Single Gimbal Control Moment Gyroscope Driven by Ultrasonic Motor&IEEE Access (Volume:8)&IEEE&CO2\\\hline
+16&Modal Space Feed forward Control for Electro-Hydraulic Parallel Mechanism&IEEE Access (Volume:7)& IEEE&CO1,  CO2\\\hline
+17&A Levitation Condition Awareness Architecture for Low-Speed Maglev Train Based on Data-Driven Random Matrix Analysis&IEEE Access (Volume:8)&IEEE&CO1, CO2\\\hline
+18&Failure analysis and design changes of oxygen pump inducers&Tsinghua Science and Technology (Volume:6, Issue:5, Dec.2001)&IEEE&CO1, CO2\\\hline
+19&Routing protocols for unmanned aerial vehicles&IEEE Communications Magazine ( Volume: 56, Issue: 1, Jan. 2018) & IEEE& CO9\\\hline
+20&Research on Eigenvalue Analysis Method in Multi-Surface Metal Shell Vibratory Gyro&IEEE Access (Volume:7)&IEEE&CO1, CO2\\\hline
+21&A transform method for Laplace's equation in multiply connected circular domains&IMA Journal of Applied Mathematics (Volume:80, Issue:6, Dec.2015)&IEEE&CO1, CO2\\\hline
+22&Two Degrees of Freedom Active Damping Technique for LCL Filter-Based Grid Connected PV Systems&IEEE Transactions on Industrial Electronics (Volume:61, Issue:6, June.2014)&IEEE&CO1, CO2\\\hline
+23&Two-Degree-of-Freedom Robust Control Optimization for the IPT System with Parameter Perturbations&IEEE Transactions on Power Electronics (Volume:33, Issue:12, Dec.2018)&IEEE&CO2, CO3\\\hline
+24&A Single-Fiber Endoscope Scanner Probe Utilizing Two-Degrees-of-Freedom (2DOF) High-Order Resonance to Realize Larger Scanning Angle&&IEEE&CO1, CO2\\\hline
+25&A Two-Degree-of-Freedom Internal Model-Based Active Disturbance Rejection Controller for a Wind Energy Conversion System&IEEE Journal of Emerging and Selected Topics in Power Electronics (Volume:8, Issue:3, Sept.2020)&IEEE&CO1, CO3\\\hline
+26&Robust Two Degrees of Freedom Attitude Controller Design and Flight Test Result for Engineering Test Satellite-VIII Spacecraft&IEEE Transactions on Control Systems Technology (Volume:22, Issue:1, Jan.2014)&IEEE&CO2, CO4\\\hline
+27&Multi-Objective Optimization Design of Natural Frequency of Two-Degree-of-Freedom Fast Steering Mirror System&IEEE Access (Volume:9), 23 February 2021&IEEE&CO3, CO4\\\hline
+28&Drones to the rescue, airline industry embraces drones as cost-saver&Aerospace America, Issue: Nov., 2025)& AIAA&CO5, CO11\\\hline
+29&Multi-Objective Optimization Design of Natural Frequency of Two-Degree-of-Freedom Fast Steering Mirror System&IEEE Access (Volume:9), 23 February 2021&IEEE&CO3, CO4\\\hline
+30&Dynamic Switching of Two Degree-of-Freedom Control for Belt-Driven Servomechanism&IEEE Access (Volume:6), 30 November 2018&IEEE&CO3, CO4\\\hline
+31&A Laboratory Prototype Tandem Helicopter with Two Degrees of Freedom&IEEE Access (Volume:9), 09 March 2021&IEEE&CO3, CO4\\\hline
+32&Robust Control for Singular Systems Based on the Uncertainty and Disturbance Estimator&IEEE Access (Volume:9), 04 August 2021&IEEE&CO3, CO4\\\hline
+33&Adaptive Sliding Mode Based Stabilization Control for the Class of Under actuated Mechanical Systems&IEEE Access (Volume: 9), 08 February 2021&IEEE&CO3, CO4\\\hline
+34&Research on Control Strategy of Two Dimensional Output Force Vibration Damping Electric Actuator&IEEE Access (Volume:9), 11 January 2021 &IEEE&CO3, CO4\\\hline
+35&Synchronous vibration suppression of magnetic bearing systems without angular sensors&CES Transactions on Electrical Machines and Systems (Volume:5, Issue:1, March.2021)&IEEE&CO3, CO4\\\hline
+36&Direct Vibration Force Suppression for Magnetically Suspended Motor Based on Synchronous Rotating Frame Transformation& IEEE Access (Volume:7), 13 March 2019&IEEE&CO3, CO4\\\hline
+37&Experience-Based Lecture for Vibration Engineering Using Dual-Scale Experiments: Free Vibration of an Actual Seismic Building and Controlling the Vibration of Scale-Down Experimental Model&IEEE Access (Volume:8),  14 May 2020 &IEEE&CO3, CO4\\\hline
+38&Electromagnetic Vibration Characteristics Analysis of a Squirrel-Cage Induction Motor Under Different Loading Conditions&IEEE Access ( Volume: 7), 02 December 2019&IEEE&CO3, CO4\\\hline
+39&Vibration Control of Tie Rod Rotors With Optimization of Unbalanced Force and Unbalanced Moment& IEEE Access (Volume:8), 06 April 2020&IEEE&CO3, CO4\\\hline
+40&Influence of Rotor-Bearing Coupling Vibration on Dynamic Behaviour of Electric Vehicle Driven by In-Wheel Motor&IEEE Access (Volume:7), 14 May 2019&IEEE&CO3, CO4\\\hline
+41&The Impact Analysis of Beating Vibration for Active Magnetic Bearing&IEEE Access (Volume:7), 02 August 2019&IEEE&CO3, CO4\\\hline
+42&Utilizing Nonlinear Active Vibration Control to Quench the Nonlinear Vibrations of Helicopter Blade Flapping System&IEEE Access (Volume:8), 03 November 2020&IEEE&CO3, CO4\\\hline
+43&Source of Acoustic Noise in a 12/16 External-Rotor Switched Reluctance Motor: Stator Tangential Vibration and Rotor Radial Vibration&IEEE Open Journal of Industry Applications (Volume:1), 23 July 2020&IEEE&CO3, CO4\\\hline
+44&Rotor Vibration Control of a Bearing-less Induction Motor Based on Unbalanced Force Feed-Forward Compensation and Current Compensation&IEEE Access (Volume:8), 06 January 2020&IEEE&CO3, CO4\\\hline
+45&Design of Eccentric Mass-Type Vibration-Damping Electric Actuator Control System for Non-Fixed-Wing Aircraft&IEEE Access (Volume:8), 07 December 2020&IEEE&CO3, CO4\\\hline
+46&Vibration Control for Electric Vehicles With In-Wheel Switched Reluctance Motor Drive System&IEEE Access (Volume:8), 07 January 2020&IEEE&CO3, CO4\\\hline
+47&Reduction of Contact Force Fluctuation for Rotary Wear Test Apparatus&IEEE/ASME Transactions on Mechatronics ( Volume: 25, Issue: 1, Feb. 2020)&IEEE&CO3, CO4\\\hline
+48&A Traveling-Wave Linear Ultrasonic Motor Driven by Two Torsional Vibrations: Design, Fabrication, and Performance Evaluation&IEEE Access (Volume:8), 03 July 2020&IEEE&CO3, CO4\\\hline
+49&Analysis of Mode Interaction in Ultra-low Frequency Oscillation Based on Trajectory Eigenvalue&Journal of Modern Power Systems and Clean Energy (Volume:8, Issue:6, November.2020)&IEEE&CO3, CO4\\\hline
+50&Stabilization of infinite‐dimensional un-damped second order systems by using a parallel compensator&IMA Journal of Mathematical Control and Information (Volume:21, Issue:1, March.2004)&IEEE&CO3, CO4\\\hline
+51&Parametric Analysis of the Car Body Suspended Equipment for Railway Vehicles Vibration Reduction&IEEE Access (Volume:7), 24 May 2019&IEEE&CO3, CO4\\\hline
+52&Stability and accuracy analysis for Taylor series numerical method&Tsinghua Science and Technology (Volume:9, Issue:1, Feb.2004)&IEEE&CO3, CO4\\\hline
+53&Self-Excitation and Stability at Speed Transients of Self-Excited Single-Phase Reluctance Generators&IEEE Transactions on Sustainable Energy (Volume: 4, Issue:1, Jan.2013)&IEEE&CO3, CO4\\\hline
+54&A dynamic analysis of the LO noise transfer mechanism in a Rb-cell frequency standard&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:47, Issue:2, March.2000)&IEEE&CO3, CO4\\\hline
+55&1/f Magnetic Noise Dependence on Free Layer Thickness in Hysteresis Free MgO Magnetic Tunnel Junctions&IEEE Transactions on Magnetics (Volume:44, Issue:11, Nov.2008)&IEEE&CO3, CO4\\\hline
+56&Modal Analysis and Structure Optimization of Permanent Magnet Synchronous Motor&IEEE Access (Volume:8), 18 August 2020&IEEE&CO3, CO4\\\hline
+57&Reliability and Modal Analysis of Key Meta-Action Unit for CNC Machine Tool&IEEE Access (Volume:7), 15 February 2019&IEEE&CO3, CO4\\\hline
+58&A Vibrational Technique for In Vitro Intraoperative Prosthesis Fixation Monitoring&IEEE Transactions on Biomedical Engineering (Volume:67, Issue:10, Oct.2020)&IEEE&CO3, CO4\\\hline
+59&Identification Method of Modal Parameters of Machine Tools Under Periodic Cutting Excitation&SIEEE Access (Volume:8), 01 July 2020&IEEE&CO3, CO4\\\hline
+60&Dynamic Characteristic Optimization of Ball Screw Feed Drive in Machine Tool Based on Modal Extraction of State Space Model&IEEE Access (Volume:7), 09 April 2019&IEEE&CO3, CO4\\\hline
+61&A Novel Approach of Identifying Railway Track Rail’s Modal Frequency From Wheel-Rail Excitation and Its Application in High-Speed Railway Monitoring&IEEE Access (Volume:7), 13 December 2019&IEEE&CO3, CO4\\\hline
+62&MATLAB-Based Programs for Power System Dynamic Analysis&IEEE Open Access Journal of Power and Energy (Volume:7), 19 November 2019&IEEE&CO3, CO4\\\hline
+63&Nonlinear Modal Decoupling of Multi-Oscillator Systems With Applications to Power Systems&IEEE Access (Volume:6), 25 December 2025&IEEE&CO3, CO4\\\hline
+64&Time Domain Characteristic Mode Analysis for Transmission Problems&IEEE Open Journal of Antennas and Propagation (Volume:1), 09 July 2020&IEEE&CO3, CO4\\\hline
+65&A Method for Constructing Automatic Rolling Bearing Fault Identification Model Based on Refined Composite Multi-Scale Dispersion Entropy&IEEE Access (Volume:9), 14 June 2021&IEEE&CO3, CO4\\\hline
+66&Enabling Free Movement EEG Tasks by Eye Fixation and Gyroscope Motion Correction: EEG Effects of Color Priming in Dress Shopping&IEEE Access (Volume:6), 22 October 2018&IEEE&CO3, CO4\\\hline
+67&Wavelet Denoising for the Vibration Signals of Wind Turbines Based on Variational Mode Decomposition and Multiscale Permutation Entropy&IEEE Access (Volume:8), 24 February 2020&IEEE&CO 5\\\hline
+68&An Integrated Approach for Instability Analysis of Lattice Brake System Using Contact Pressure Sensitivity&IEEE Access (Volume:8), 06 January 2020&IEEE&CO 5\\\hline
+69&A Multi-Point Iterative Analysis Method for Vibration Control of a Steering Wheel at Idle Speed&IEEE Access (Volume:7), 03 July 2019&Air Force Association&CO11\\\hline
+70&Design and Development of a Movable and Self-Extensible Apparatus for Substation Construction and Maintenance&IEEE Access (Volume:8), 02 June 2020&IEEE&CO 5\\\hline
+71&Modal and Dynamic Analysis of a Tether for a Nonequatorial Space Elevator&IEEE Access (Volume:6), 26 November 2018&IEEE&CO 5\\\hline
+72&Vibration Characteristics Analysis of Human- Robot Coupled System for Walking Posture of Elderly-Assistant Robot&IEEE Access (Volume:9), 17 March 2021&IEEE&CO 5\\\hline
+73&Application of the Variational Mode Decomposition-Based Time and Time–Frequency Domain Analysis on Series DC Arc Fault Detection of Photovoltaic Arrays&IEEE Access (Volume:7), 02 September 2019&IEEE&CO 5\\\hline
+74&Overview of Harmonic and Resonance in Railway Electrification Systems&IEEE Transactions on Industry Applications (Volume:54, Issue:5, Sept.-Oct.2018)&IEEE&CO 5\\\hline
+75&Modeling and Experimental Study on the Micro-Vibration Transmission of a Control Moment Gyro&IEEE Access (Volume:7), 13 June 2019&IEEE&CO 5\\\hline
+76&Dynamic Modeling of Multistage Gearbox and Analysis Method of Resonance Danger Path&IEEE Access (Volume:7), 30 September 2019&IEEE&CO 5\\\hline
+77&Manipulation Skill Acquisition for Robotic Assembly Based on Multi-Modal Information Description&IEEE Access (Volume:8) &IEEE&CO 5\\\hline
+78&A study of shock-resistance design of suspension subjected to impulsive excitation&IEEE Transactions on Magnetics (Volume:37, Issue:2, March.2001)&IEEE&CO 5\\\hline
+79&Estimating the Frequency Response of an Excitation System and Synchronous Generator: Sinusoidal Disturbances Versus Empirical Transfer Function Estimate&IEEE Power and Energy Technology Systems Journal (Volume:5, Issue:2, June.2018)&IEEE&CO 5\\\hline
+80&Modeling and Control of Drill-String System With Stick-Slip Vibrations Using LPV Technique&IEEE Transactions on Control Systems Technology (Volume:29, Issue:2, March.2021)&IEEE&CO 5\\\hline
+81&Improvement of Design and Motion Control for Motion Platform Based on Spherical Wheels&IEEE/ASME Transactions on Mechatronics (Volume:24, Issue:5, Oct.2019)&IEEE&CO 5\\\hline
+82&Whirl Mode Suppression for AMB-Rotor Systems in Control Moment Gyros Considering Significant Gyroscopic Effects&IEEE Transactions on Industrial Electronics (Volume:68, Issue:5, May.2021)&IEEE&CO 5\\\hline
+83&Tree Based Trajectory Optimization Based on Local Linearity of Continuous Non-Linear Dynamics&IEEE Transactions on Automatic Control (Volume:61, Issue:9, Sept.2016)&IEEE&CO 5\\\hline
+84&A linear coupling controller for plate vibration&IEEE/ASME Transactions on Mechatronics (Volume:9, Issue:2, June.2004)&IEEE&CO 5\\\hline
+85&Extracting Signals Robust to Electrode Number and Shift for Online Simultaneous and Proportional Myoelectric Control by Factorization Algorithms&IEEE Transactions on Neural Systems and Rehabilitation Engineering (Volume:22, Issue:3, May.2014)&IEEE&CO 5\\\hline
+86&Robust Adaptive Sliding-Mode Control of a Permanent Magnetic Spherical Actuator With Delay Compensation&IEEE Access (Volume:8), 09 July 2020&IEEE&CO 5\\\hline
+87&Modeling and control of active susnensions for MDOF vehicle&Tsinghua Science and Technology (Volume:8, Issue:2, April.2003)&IEEE&CO 5\\\hline
+88&Power links with Ireland-excitation of turbine-generator shaft torsional vibrations by variable frequency currents superimposed on DC currents in asynchronous HVDC links&IEEE Transactions on Power Systems (Volume:10, Issue:3, Aug.1995)&IEEE&CO 5\\\hline
+89&Thickness resonances dispersion characteristics of a lossy piezoceramic plate with electrodes of arbitrary conductivity&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:54, Issue:12, December.2007)&IEEE&CO 5\\\hline
+90&Inertial vibration damping control of a flexible base manipulator&IEEE/ASME Transactions on Mechatronics (Volume:8, Issue:2, June.2003)&IEEE&CO 5\\\hline
+91&Charging port for autonomous drone swarms hundreds of drones can recharge autonomously on unmanned ground vehicles & Tech Briefs, Issue: Mar., 2021&IEEE&CO 5\\\hline
+92&Research on the Control Strategy of Hydraulic Shaking Table Based on the Structural Flexibility&IEEE Access (Volume:7), 22 March 2019&IEEE&CO 5\\\hline
+93&Comparative Study on Dynamic Characteristics of Two-Stage Gear System with Gear and Shaft Cracks Considering the Shaft Flexibility&IEEE Access (Volume:8), 15 July 2020&IEEE&CO 5\\\hline
+94&Output stabilization of flexible spacecraft with active vibration suppression&IEEE Transactions on Aerospace and Electronic Systems (Volume:39, Issue:3, July.2003)&IEEE&CO 5\\\hline
+95&Impact of shaft torsionals in steam turbine control&IEEE Transactions on Energy Conversion (Volume:4, Issue:2, Jun.1989)&IEEE&CO 5\\\hline
+96&Analysis of shaft torsional phenomena in governing large steam turbine generators with non-linear valve stroking&IEEE Transactions on Energy Conversion (Volume:14, Issue:3, Sep.1999)&IEEE&CO 5\\\hline
+97&Transverse Vibration Control of Axially Moving Membranes by Regulation of Axial Velocity&IEEE Transactions on Control Systems Technology (Volume:20, Issue:4, July.2012)&IEEE&CO 5\\\hline
+98&Recent Advances and Tendency in Fiber Bragg Grating-Based Vibration Sensor: A Review&IEEE Sensors Journal ( olume:20, Issue:20, Oct.15, 15 2020)&IEEE&CO 5\\\hline
+99&Measurement of the longitudinal and transverse vibration frequencies of a rod by speckle interferometry&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:40, Issue:3, May.1993)&IEEE&CO 5\\\hline
+100&Boundary Vibration Control of Variable Length Crane Systems in Two-Dimensional Space With Output Constraints&IEEE/ASME Transactions on Mechatronics (Volume:22, Issue:5, Oct.2025)&IEEE&CO 5\\\hline
+101&A Diaphragm Type Fiber Bragg Grating Vibration Sensor Based on Transverse Property of Optical Fiber With Temperature Compensation&IEEE Sensors Journal (Volume:17, Issue:4, Feb.15, 15 2025)&IEEE&CO 5\\\hline
+102&Fretting in Electrical Connectors Induced by Axial Vibration&IEEE Transactions on Components, Packaging and Manufacturing Technology (Volume:5, Issue:3, March.2015)&IEEE&CO 5\\\hline
+103&Theoretical, numerical, and experimental investigation on resonant vibrations of piezoceramic annular disks&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:52, Issue:8, Aug.2005)&IEEE&CO 5\\\hline
+104&Dynamic vibration analysis of switched reluctance motor using magnetic charge force density and mechanical analysis&IEEE Transactions on Applied Superconductivity (Volume:12, Issue:1, Mar.2002)&IEEE&CO 5\\\hline
+105&Modeling and Vibration Control for a Nonlinear Moving String With Output Constraint&IEEE/ASME Transactions on Mechatronics (Volume:20, Issue:4, Aug.2015)&IEEE&CO 5\\\hline
+106&Non-Contact Vibration Monitoring of Power Transmission Belts Through Electrostatic Sensing&IEEE Sensors Journal (Volume:16, Issue:10, May15, 2016)&IEEE&CO 3\\\hline
+107&Open-Loop Vibration Control of an Underwater System: Application to Refueling Machine&IEEE/ASME Transactions on Mechatronics (Volume:22, Issue:4, Aug.2017)&IEEE&CO 3\\\hline
+108&Theoretical analysis and experimental measurement for resonant vibration of piezoceramic circular plates&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:51, Issue:1, Jan.2004)&IEEE&CO 3\\\hline
+109&A Microgyroscope With Piezoresistance for Both High-Performance Coriolis-Effect Detection and Seesaw-Like Vibration Control&Journal of Microelectromechanical Systems (Volume:15, Issue:6, Dec.2006)&IEEE&CO 3\\\hline
+110&Similarity laws of the internal damping of stranded cables in transverse vibrations&IEEE Transactions on Power Delivery (Volume:7, Issue:3, Jul.1992&IEEE&CO 3\\\hline
+111&Transformation of wind tunnel data on aeolian vibrations for application to random conductor vibrations in a turbulent wind&IEEE Transactions on Power Delivery (Volume:3, Issue:1, Jan.1988)&IEEE&CO 3\\\hline
+112&Effects of the intensity of precipitation and transverse wind on the corona-induced vibration of HV conductors&IEEE Transactions on Power Delivery (Volume:7, Issue:2, Apr.1992)&IEEE&CO 3\\\hline
+113&Time-frequency analysis of skeletal muscle and cardiac vibrations&Proceedings of the IEEE (Volume:84, Issue:9, Sept.1996)&IEEE&CO 3\\\hline
+114&Vibration analysis of angle-ply laminated composite plates with an embedded piezoceramic layer&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:50, Issue:9, Sept.2003)&IEEE&CO 3\\\hline
+115&Biaxial Fiber Bragg Grating Accelerometer Using Axial and Transverse Forces&IEEE Photonics Technology Letters (Volume:26, Issue:15, Aug.1, 1 2014)&IEEE&CO 3\\\hline
+116&Proper orthogonal decomposition-based control of transverse beam vibrations: experimental implementation&IEEE Transactions on Control Systems Technology (Volume:10, Issue:5, Sep.2002)&IEEE&CO 3\\\hline
+117&High-frequency resonant characteristics of triple-layered piezoceramic bimorphs determined using experimental measurements and theoretical analysis&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:59, Issue:6, June.2012)&IEEE&CO 3\\\hline
+118&How the Mechanical Properties and Thickness of Glass Affect TPaD Performance&IEEE Transactions on Haptics (Volume:13, Issue:3, July-Sept.1 2020)&IEEE&CO 3\\\hline
+119&Mechanical Performance of Transverse Flux Machines&IEEE Transactions on Industry Applications (Volume:55, Issue:4, July-Aug. 2019)&IEEE&CO 3\\\hline
+120&Vibration analysis for piezoceramic rectangular plates using Ritz's method with equivalent constants&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:53, Issue:2, Feb.2006)&IEEE&CO 3\\\hline
+121&Study of Phase Shift Control in High-Speed Ultrasonic Vibration Cutting&IEEE Transactions on Industrial Electronics (Volume:65, Issue:3, March 2018)&IEEE&CO 3\\\hline
+122&Experimental evaluation of adaptive predictive control for rotor vibration suppression&IEEE Transactions on Control Systems Technology (Volume: 10, Issue: 6, Nov.2002)&IEEE&CO 3\\\hline
+123&Wear Analysis of Tube-Baffle Vibration Interaction in a Tube Bundle&IEEE Access (Volume:7), 13 June 2019&IEEE&CO 3\\\hline
+124&Traveling wave excitation in a flexural vibration ring by using a torsional-flexural composite transducer&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:48, Issue:4, July 2001)&IEEE&CO 3\\\hline
+125&Flexural vibration behavior of piezoelectric heterogeneous bimorph beams&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:49, Issue:7, July.2002)&IEEE&CO 3\\\hline
+126&Adaptive Boundary Control of a Nonlinear Flexible String System&IEEE Transactions on Control Systems Technology (Volume:22, Issue:3, May.2014)&IEEE&CO 3\\\hline
+127&On the sensing and tuning of progressive structural vibration waves&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:52, Issue:9, Sept.2005)&IEEE&CO 3\\\hline
+128&Free vibration analysis of the piezoceramic bimorph with theoretical and experimental investigation&IEEE Access (Volume:7), 13 June 2019&IEEE&CO 3\\\hline
+129&Applying Spatial Orbit Motion to Accelerometer Sensitivity Measurement&IEEE Sensors Journal (Volume:17, Issue:14, July15, 15 2025)&IEEE&CO 4\\\hline
+130&Dynamic Piezoelectric Tactile Sensor for Tissue Hardness Measurement Using Symmetrical Flexure Hinges and Anisotropic Vibration Modes&IEEE Sensors Journal (Volume:21, Issue:16, Aug.15, 15 2021)&IEEE&CO 4\\\hline
+131&Vibration induced in towed linear underwater array cables&IEEE Journal of Oceanic Engineering (Volume:6, Issue:3, Jul.1981)&IEEE&CO 4\\\hline
+132&A high sensitivity hydrostatic piezoelectric transducer based on transverse piezoelectric mode honeycomb ceramic composites&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:43, Issue:1, Jan.1996)&IEEE&CO 4\\\hline
+133&Evaluation of Mode Dependent Fluid Damping in a High Frequency Drumhead Microresonator&Journal of Microelectromechanical Systems (Volume:23, Issue:2, April.2014)&IEEE&CO 4\\\hline
+134&The natural frequencies of the arterial system and their relation to the heart rate&IEEE Transactions on Biomedical Engineering (Volume:51, Issue:1, Jan.2004)&IEEE&CO 4\\\hline
+135&Effect of Surface Stress on Resonance Frequency of Microcantilever Sensors&IEEE Sensors Journal (Volume:18, Issue:18, Sept.15, 15 2018)&IEEE&CO 4\\\hline
+136&A natural modal expansion for the flexible robot arm problem via a self-adjoint formulation&IEEE Transactions on Robotics and Automation (Volume:6, Issue:5, Oct.1990)&IEEE&CO 4\\\hline
+137&Control of lateral motion in moving webs&IEEE Transactions on Control Systems Technology (Volume:11, Issue:5, Sept.2003)&IEEE&CO 4\\\hline
+138&Large-area, real-time imaging system for surface acoustic wave devices&IEEE Transactions on Instrumentation and Measurement (Volume:5, Issue:5, Oct.1996)&IEEE&CO 4\\\hline
+139&A Virtual Model of Spring Reverberation&IEEE Transactions on Audio, Speech, and Language Processing (Volume:18, Issue:4, May.2010)&IEEE&CO 4\\\hline
+140&Electromechanical analysis of a symmetric piezoelectric/elastic laminate structure: theory and experiment&IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control (Volume:45, Issue:2, March.1998)&IEEE&CO 4\\\hline
+141&Lateral-Mode Vibration of Microcantilever-Based Sensors in Viscous Fluids Using Timoshenko Beam Theory&Journal of Microelectromechanical Systems (Volume: 4, Issue:4, Aug.2015)&IEEE&CO 4\\\hline
+142&Passive control reinforced concrete frame mechanism with high strength reinforcements and its potential benefits against earthquakes&Tsinghua Science and Technology (Volume:11, Issue:6, Dec.2006)&IEEE&CO 4\\\hline
+143&Design and Experiments of a Novel Rotary Piezoelectric Actuator Using Longitudinal–Torsional Convertors&IEEE Access (Volume:7), 08 February 2019&IEEE&CO 4\\\hline
+144&A Novel Rotary Ultrasonic Motor Using the Longitudinal Vibration Mode&IEEE Access (Volume:7), 16 September 2019&IEEE&CO 4\\\hline
+145&Semi-Active Vibration Control for in-Wheel Switched Reluctance Motor Driven Electric Vehicle With Dynamic Vibration Absorbing Structures: Concept and Validation&IEEE Access (Volume:6), 10 October 2018&IEEE&CO 4\\\hline
+146&A New Linear Ultrasonic Motor Using Hybrid Longitudinal Vibration Mode&IEEE Access (Volume:4), 2016&IEEE&CO 4\\\hline
+147&Design and Fabrication of a Skew-Typed Longitudinal-Torsional Composite Ultrasonic Vibrator for Titanium Wire Drawing&IEEE Access (Volume:4), 04 October 2016&IEEE&CO 4\\\hline
+148&An Easily Fabricated Linear Piezoelectric Actuator Using Sandwich Longitudinal Vibrators With Four Driving Feet&IEEE Access (Volume:7), 25 December 2018&IEEE&CO 4\\\hline
+149&Dynamic Inspection of Rail Wear via a Three-Step Method: Auxiliary Plane Establishment, Self-Calibration, and Projecting&IEEE Access (Volume:6), 29 June 2018&IEEE&CO 4\\\hline
+150&Crashworthiness simulation and improvement design of auto-body based on finite element mehtod&Journal of Systems Engineering and Electronics (Volume:15, Issue:4, Dec.2004)&IEEE&CO 4\\\hline
+151&Design and Experiment Evaluation of a Rotatable and Deployable Sleeve Mechanism Using a Two-DOF Piezoelectric Actuator&IEEE Access (Volume:6), 23 October 2018&IEEE&CO 4\\\hline
+152&Modeling and Analysis of Aeroelasticity and Sloshing for Liquid Rocket&IEEE Access (Volume:7),  03 December 2018&IEEE&CO 4\\\hline
+153&Bicycle Simulator Improvement and Validation&IEEE Access (Volume:9),  05 April 2021&IEEE&CO 4\\\hline
+154&Modeling and Analysis of Aeroelasticity and Sloshing for Liquid Rocket&IEEE Access (Volume:7), 03 December 2018&IEEE&CO 4\\\hline
+155&A Fixed-Wing Aircraft Simulation Tool for Improving DoD Acquisition Efficiency&Computing in Science and Engineering (Volume:18, Issue:1, Jan.-Feb.2016)&IEEE&CO 4\\\hline
+156&Aeroelastic and Trajectory Control of High Altitude Long Endurance Aircraft& IEEE Transactions on Aerospace and Electronic Systems ( Volume: 54, Issue: 6, December 2018)&IEEE&CO 4\\\hline
+157&Structural dynamic analysis of turbine blade&2025 First International Conference on Recent Advances in Aerospace Engineering (ICRAAE)&IEEE&CO 4\\\hline
+158&Research of a fault diagnosis algorithm for aerospace dynamic system based on analytic hierarchy process&IEEE The 2nd International Conference on Information Science and Engineering&IEEE&CO 4\\\hline
+159&The Characterization of Impact Dynamics in Aerospace Structures — The Case of Deformable Impactors&IEEE  2023 10th International Conference on Recent Advances in Air and Space Technologies (RAST)&IEEE&CO 4\\\hline
+160&An overview on dynamics and controls modelling of hypersonic vehicles&IEEE (2009 American Control Conference)&IEEE&CO 4\\\hline
+	\end{longtable}
+	
+	\end{flushleft}
+	\begin{flushleft}
+		\textbf{Course Coordinator: \hspace{10cm}\textbf{HOD, AE}\\ 
+			Mr. K Arun Kumar, Assistant Professor } \\
+	\end{flushleft}
+\end{document}
+
+
+	
